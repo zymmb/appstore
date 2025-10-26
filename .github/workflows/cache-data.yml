@@ -1,0 +1,27 @@
+name: Cache Data
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cache-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Fetch data from API
+      run: |
+        # 这里可以替换为你的数据源，例如从数据库导出数据
+        echo '[{"id":1,"appId":"12345","name":"Example App","packageName":"com.example.app","company":"Example Company","iconUrl":"http://example.com/icon.png","details":"<p>Example details</p>","category":"game"}]' > data/apps.json
+
+    - name: Commit and push data
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add data/apps.json
+        git commit -m "Update apps data" || echo "No changes to commit"
+        git push
