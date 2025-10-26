@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#app-list {
+    margin-top: 20px;
+}
+
+.app {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.app h2 {
+    margin: 0 0 10px;
+}
+
+.app img {
+    max-width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}

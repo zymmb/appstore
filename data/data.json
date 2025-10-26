@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "appId": "12345",
+        "name": "Example App",
+        "packageName": "com.example.app",
+        "company": "Example Company",
+        "iconUrl": "http://example.com/icon.png",
+        "details": "<p>Example details</p>",
+        "category": "game"
+    },
+    {
+        "id": 2,
+        "appId": "67890",
+        "name": "Another App",
+        "packageName": "com.another.app",
+        "company": "Another Company",
+        "iconUrl": "http://example.com/another_icon.png",
+        "details": "<p>Another example details</p>",
+        "category": "news"
+    }
+]
