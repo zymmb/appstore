@@ -1,38 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>应用商店</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <style></style> -->
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>应用商店</h1>
-            <div class="controls">
-                <input type="text" id="searchInput" placeholder="搜索应用...">
-                <select id="categoryFilter">
-                    <option value="">所有类别</option>
-                    <option value="game">游戏</option>
-                    <option value="short_play">短视频</option>
-                    <option value="news">新闻</option>
-                    <option value="general">通用</option>
-                </select>
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-store"></i> 应用商店</h1>
+                <div class="header-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="搜索应用名称或公司...">
+                    </div>
+                    <select id="categoryFilter" class="category-filter">
+                        <option value="">所有类别</option>
+                        <option value="game">游戏</option>
+                        <option value="short_play">短视频</option>
+                        <option value="news">新闻</option>
+                        <option value="general">通用</option>
+                    </select>
+                    <button id="refreshBtn" class="refresh-btn">
+                        <i class="fas fa-sync-alt"></i> 刷新
+                    </button>
+                </div>
             </div>
         </header>
 
-        <main>
+        <main class="main">
+            <div class="stats-bar">
+                <span>总计: <strong id="totalCount">0</strong> 个应用</span>
+                <span id="filterCount"></span>
+            </div>
+            
+            <div id="loading" class="loading">
+                <i class="fas fa-spinner fa-spin"></i> 正在加载应用数据...
+            </div>
+
             <div id="appList" class="app-grid">
                 <!-- 应用列表将通过JavaScript动态生成 -->
             </div>
+
+            <div id="errorMessage" class="error-message hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <h3>数据加载失败</h3>
+                    <p>无法获取应用数据，请检查网络连接或稍后重试。</p>
+                </div>
+            </div>
         </main>
 
-        <footer>
-            <p>数据最后更新: <span id="lastUpdated"></span></p>
+        <footer class="footer">
+            <p>数据最后更新: <span id="lastUpdated">-</span></p>
+            <p class="cache-info">数据通过GitHub Cache模块缓存，自动更新</p>
         </footer>
     </div>
 
-    <script src="script.js"></script>
+   
 </body>
 </html>
+
+

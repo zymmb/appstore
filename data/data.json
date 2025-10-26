@@ -1,28 +1,56 @@
 {
     "apps": [
-        {
-            "id": 1,
-            "appId": "12345",
-            "name": "Example App",
-            "packageName": "com.example.app",
-            "company": "Example Company",
-            "iconUrl": "http://example.com/icon.png",
-            "details": "<p>Example details</p>",
-            "category": "game"
-        },
-        {
-            "id": 2,
-            "appId": "67890",
-            "name": "Another App",
-            "packageName": "com.another.app",
-            "company": "Another Company",
-            "iconUrl": "http://example.com/another_icon.png",
-            "details": "<p>Another example details</p>",
-            "category": "news"
-        }
+      {
+        "id": 1,
+        "appId": "com.example.game1",
+        "name": "冒险之旅",
+        "packageName": "com.example.game1",
+        "company": "游戏工作室",
+        "iconUrl": "https://picsum.photos/64/64?random=1",
+        "details": "<p>一款精彩的冒险角色扮演游戏</p>",
+        "insertTime": "2025-10-26 20:30:45:123",
+        "updateTime": "2025-10-26 20:30:45:123",
+        "category": "game"
+      },
+      {
+        "id": 2,
+        "appId": "com.example.video1",
+        "name": "短视频精选",
+        "packageName": "com.example.video1",
+        "company": "视频科技",
+        "iconUrl": "https://picsum.photos/64/64?random=2",
+        "details": "<p>发现精彩短视频内容</p>",
+        "insertTime": "2025-10-26 19:15:22:456",
+        "updateTime": "2025-10-26 19:15:22:456",
+        "category": "short_play"
+      },
+      {
+        "id": 3,
+        "appId": "com.example.news1",
+        "name": "今日头条",
+        "packageName": "com.example.news1",
+        "company": "新闻传媒",
+        "iconUrl": "https://picsum.photos/64/64?random=3",
+        "details": "<p>获取最新新闻资讯</p>",
+        "insertTime": "2025-10-26 18:45:33:789",
+        "updateTime": "2025-10-26 18:45:33:789",
+        "category": "news"
+      },
+      {
+        "id": 4,
+        "appId": "com.example.tool1",
+        "name": "实用工具箱",
+        "packageName": "com.example.tool1",
+        "company": "工具开发",
+        "iconUrl": "https://picsum.photos/64/64?random=4",
+        "details": "<p>包含多种实用工具</p>",
+        "insertTime": "2025-10-26 17:20:11:234",
+        "updateTime": "2025-10-26 17:20:11:234",
+        "category": "general"
+      }
     ],
     "metadata": {
-        "lastUpdated": "2025-01-26 10:30:45:123",
-        "totalCount": 2
+      "lastUpdated": "2025-10-26 21:00:00:000",
+      "totalCount": 4
     }
-}
+  }

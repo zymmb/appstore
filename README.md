@@ -56,3 +56,52 @@ app-store/
 ## 贡献
 
 欢迎贡献代码！
+
+
+
+
+20251026 21:08:10 debug_v0.0.1
+
+## 修复的问题
+
+- ✅ 修复了404路径错误
+- ✅ 优化了数据加载逻辑
+- ✅ 添加了错误处理机制
+- ✅ 改进了响应式设计
+
+## 部署说明
+
+1. 将整个项目推送到GitHub仓库
+2. 在仓库设置中启用GitHub Pages：
+   - Source: GitHub Actions
+   - Branch: main
+3. 访问 `https://<username>.github.io/<repository-name>/`
+
+## 项目特性
+
+- 📱 响应式设计
+- 🔍 实时搜索和过滤
+- 🎯 分类浏览
+- ⚡ 快速加载
+- 🎨 现代化UI设计
+
+## 文件结构
+
+```
+app-store/
+├── index.html              # 主页面
+├── styles.css              # 样式文件
+├── script.js               # 主要逻辑
+├── data/
+│   └── apps.json          # 应用数据
+├── .github/
+│   └── workflows/
+│       └── deploy.yml     # 部署配置
+└── README.md               # 项目说明
+```
+
+## 技术栈
+
+- HTML5 + CSS3 + JavaScript
+- Font Awesome图标
+- GitHub Pages + GitHub Actions
