@@ -7,7 +7,13 @@
 1. 将项目代码推送到 GitHub 仓库。
 2. 在仓库设置中启用 GitHub Pages。
 3. 数据将通过 GitHub Actions 自动缓存到 `data/apps.json`。
-4. 访问 `&lt;your-github-username&gt;.github.io/&lt;your-repo-name&gt;` 查看项目。
+
+
+4. 访问 `<your-github-username>.github.io/<your-repo-name>` 查看项目。
+
+
+
+
 
 ## 贡献
 
