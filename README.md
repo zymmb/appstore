@@ -12,6 +12,44 @@
 4. 访问 `<your-github-username>.github.io/<your-repo-name>` 查看项目。
 
 
+# 静态应用商店
+
+这是一个基于JavaScript的静态应用商店项目，可以部署在GitHub Pages上。
+
+## 功能特性
+
+- 应用列表展示
+- 搜索和过滤功能
+- 分类浏览
+- 响应式设计
+
+## 项目结构
+```bash
+app-store/
+├── index.html # 主页面
+├── styles.css # 样式文件
+├── script.js # 主要逻辑
+├── data/
+│ └── apps.json # 应用数据存储
+├── .github/
+│ └── workflows/
+│ └── cache-data.yml # 数据缓存工作流
+└── README.md # 项目说明
+```
+
+## 部署说明
+
+1. 将项目推送到GitHub仓库
+2. 在仓库设置中启用GitHub Pages
+3. 数据将通过GitHub Actions自动缓存和更新
+
+## 数据管理
+
+应用数据存储在 `data/apps.json` 文件中，可以通过以下方式管理：
+
+- 手动编辑JSON文件
+- 通过GitHub Actions自动更新
+- 使用GitHub Issues收集用户提交的应用信息
 
 
 

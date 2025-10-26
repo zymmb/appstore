@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Store</title>
+    <title>应用商店</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>App Store</h1>
-    <div id="app-list"></div>
+    <div class="container">
+        <header>
+            <h1>应用商店</h1>
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="搜索应用...">
+                <select id="categoryFilter">
+                    <option value="">所有类别</option>
+                    <option value="game">游戏</option>
+                    <option value="short_play">短视频</option>
+                    <option value="news">新闻</option>
+                    <option value="general">通用</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div id="appList" class="app-grid">
+                <!-- 应用列表将通过JavaScript动态生成 -->
+            </div>
+        </main>
+
+        <footer>
+            <p>数据最后更新: <span id="lastUpdated"></span></p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
